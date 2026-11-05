@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Compliance by Ubenathi | Professional Business Consultant</title>
+<meta name="description" content="Ubenathi provides business registration, compliance, certificates and administrative services for entrepreneurs and businesses in South Africa.">
+<meta name="theme-color" content="#0e1a2e">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0e1a2e;
+  --navy2:#16263f;
+  --navy3:#1e3352;
+  --gold:#d4af6a;
+  --gold2:#f0d9a0;
+  --gold-dark:#a78343;
+  --cream:#faf7f0;
+  --light:#f4f5f7;
+  --white:#fff;
+  --text:#2b3442;
+  --muted:#6b7688;
+  --border:#e8e2d5;
+  --radius:16px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:'Inter',Arial,sans-serif;color:var(--text);line-height:1.75;background:var(--white);-webkit-font-smoothing:antialiased}
+.container{width:min(1160px,90%);margin:auto}
+section{padding:100px 0}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+button,input,textarea,select{font:inherit}
+.section-label{display:inline-flex;align-items:center;gap:10px;color:var(--gold-dark);font-size:11px;font-weight:800;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px}
+.section-label::before{content:"";width:32px;height:2px;background:var(--gold);display:inline-block}
+.section-title{font-family:'Playfair Display',Georgia,serif;font-size:clamp(32px,4.2vw,48px);line-height:1.15;color:var(--navy);margin-bottom:18px;font-weight:600}
+.section-description{color:var(--muted);max-width:650px;font-size:16px}
+
+/* NAV - GLASS */
+header{background:rgba(255,255,255,.92);backdrop-filter:blur(12px);position:sticky;top:0;z-index:1000;box-shadow:0 4px 24px rgba(14,26,46,.06);border-bottom:1px solid #f0ede6}
+.navbar{min-height:82px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:13px}
+.brand-icon{width:52px;height:52px;display:grid;place-items:center;background:linear-gradient(135deg,var(--navy),var(--navy3));color:var(--gold2);font-family:'Playfair Display',serif;font-size:28px;font-weight:700;border-radius:50%;border:2px solid var(--gold);box-shadow:0 6px 16px rgba(14,26,46,.18);flex-shrink:0}
+.brand-name{font-family:'Playfair Display',serif;font-size:21px;font-weight:700;color:var(--navy);line-height:1.05}
+.brand-name span{color:var(--gold-dark);display:block;font-style:italic;font-weight:600}
+.brand-name small{display:block;font-family:'Inter',sans-serif;font-size:8.5px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);font-weight:700;margin-top:4px}
+.nav-links{display:flex;align-items:center;gap:32px;list-style:none}
+.nav-links a{font-size:13px;font-weight:600;color:var(--navy);transition:.2s;position:relative}
+.nav-links a:hover{color:var(--gold-dark)}
+.nav-links a:not(.nav-button)::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--gold);transition:.25s}
+.nav-links a:not(.nav-button):hover::after{width:100%}
+.nav-button{background:var(--navy)!important;color:white!important;padding:13px 20px!important;border-radius:100px!important;box-shadow:0 8px 20px rgba(14,26,46,.18)}
+.nav-button:hover{background:var(--gold-dark)!important;transform:translateY(-1px)}
+.menu-toggle{display:none;border:none;background:transparent;font-size:27px;color:var(--navy);cursor:pointer}
+
+/* HERO - BEAUTIFUL FEEL TO MATCH logo.png */
+.hero{min-height:680px;display:flex;align-items:center;color:white;position:relative;overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:-25px;background:url("logo.png") center/cover no-repeat;filter:blur(12px) brightness(.55) saturate(1.15);transform:scale(1.1);z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(92deg,rgba(10,18,32,.96) 0%,rgba(10,18,32,.82) 45%,rgba(10,18,32,.25) 100%),linear-gradient(to top,rgba(10,18,32,.65),transparent 45%);z-index:-1}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(8px);padding:8px 14px;border-radius:100px;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#ffe9b8;margin-bottom:22px}
+.hero-badge i{width:7px;height:7px;background:#4ade80;border-radius:50%;display:inline-block;box-shadow:0 0 0 4px rgba(74,222,128,.25)}
+.hero-content{max-width:740px;padding:90px 0;position:relative}
+.hero h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(44px,6.2vw,76px);font-weight:600;line-height:1.05;margin-bottom:22px;text-shadow:0 4px 30px rgba(0,0,0,.35)}
+.hero h1 span{color:var(--gold2);font-style:italic;font-weight:500}
+.hero p{color:#dbe2ec;font-size:17.5px;max-width:610px;margin-bottom:32px;line-height:1.8}
+.hero-stats{display:flex;gap:28px;margin-top:38px;padding-top:28px;border-top:1px solid rgba(255,255,255,.18)}
+.hero-stats div b{display:block;font-family:'Playfair Display',serif;font-size:24px;color:white;line-height:1}
+.hero-stats div span{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#aeb9cb}
+.button{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 26px;border-radius:100px;border:1px solid transparent;font-size:13px;font-weight:700;letter-spacing:.4px;cursor:pointer;transition:.25s}
+.button-gold{background:linear-gradient(135deg,var(--gold),#e8c98a);color:var(--navy);box-shadow:0 12px 28px rgba(212,175,106,.35)}
+.button-gold:hover{transform:translateY(-2px);box-shadow:0 16px 32px rgba(212,175,106,.45)}
+.button-outline{color:white;border-color:rgba(255,255,255,.6);background:rgba(255,255,255,.08);backdrop-filter:blur(8px);margin-left:12px}
+.button-outline:hover{background:white;color:var(--navy)}
+
+/* ABOUT */
+.introduction{background:var(--cream)}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:75px;align-items:center}
+.intro-image{position:relative;min-height:420px;border-radius:20px;overflow:hidden;background:url("logo.png") center/cover no-repeat;box-shadow:0 20px 50px rgba(14,26,46,.18)}
+.intro-image::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(14,26,46,.55),transparent 55%)}
+.intro-card{position:absolute;left:20px;right:20px;bottom:20px;z-index:2;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-radius:14px;padding:18px 20px;display:flex;gap:14px;align-items:center}
+.intro-card b{font-family:'Playfair Display',serif;font-size:28px;color:var(--navy);line-height:1}
+.intro-card span{font-size:12px;color:var(--muted);line-height:1.4;display:block}
+.intro-content p{color:var(--muted);margin-bottom:18px}
+.signature{margin-top:26px;padding-top:22px;border-top:1px solid var(--border);font-family:'Playfair Display',serif;font-size:26px;font-style:italic;color:var(--navy)}
+.signature small{display:block;font-family:'Inter',sans-serif;font-size:11px;font-style:normal;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-top:6px}
+
+/* SERVICES */
+.services{background:white}
+.center-heading{text-align:center;max-width:700px;margin:0 auto 55px}
+.center-heading .section-label{justify-content:center}
+.center-heading .section-label::after{content:"";width:32px;height:2px;background:var(--gold)}
+.center-heading .section-description{margin:auto}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.service-card{background:white;padding:34px 28px;border-radius:18px;border:1px solid #eee9dd;transition:.3s;position:relative;overflow:hidden}
+.service-card::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--gold),var(--gold2));opacity:0;transition:.3s}
+.service-card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(14,26,46,.10);border-color:var(--gold)}
+.service-card:hover::before{opacity:1}
+.service-icon{width:60px;height:60px;display:grid;place-items:center;background:linear-gradient(135deg,#fbf6ea,#f3e8d0);color:var(--gold-dark);font-size:26px;margin-bottom:22px;border-radius:14px}
+.service-card h3{font-family:'Playfair Display',serif;font-size:22px;color:var(--navy);margin-bottom:10px}
+.service-card p{color:var(--muted);font-size:14.5px;margin-bottom:18px}
+.service-link{font-size:12px;font-weight:800;color:var(--navy);letter-spacing:1px;text-transform:uppercase}
+.service-link:hover{color:var(--gold-dark)}
+
+/* WHY */
+.why-us{background:linear-gradient(135deg,#0e1a2e,#1a2e4a);color:white;position:relative;overflow:hidden}
+.why-us::before{content:"";position:absolute;width:420px;height:420px;background:radial-gradient(circle,rgba(212,175,106,.22),transparent 70%);right:-100px;top:-100px;border-radius:50%}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;position:relative}
+.why-us .section-title{color:white}
+.why-us .section-description{color:#cbd5e1}
+.why-list{list-style:none;margin-top:28px}
+.why-list li{display:flex;gap:14px;margin:16px 0;color:#e2e8f0;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);padding:14px 16px;border-radius:12px}
+.why-check{width:28px;height:28px;flex-shrink:0;display:grid;place-items:center;background:var(--gold);color:var(--navy);font-size:14px;font-weight:800;border-radius:50%}
+.why-image{min-height:440px;border-radius:20px;background:linear-gradient(rgba(16,29,53,.15),rgba(16,29,53,.15)),url("https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=85") center/cover no-repeat;box-shadow:0 20px 50px rgba(0,0,0,.3)}
+
+/* PRICING */
+.process{background:var(--cream)}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.process-card{padding:24px 22px;border-radius:16px;border:1px solid #eee9dd;background:#fff;box-shadow:0 6px 20px rgba(14,26,46,.04);transition:.25s}
+.process-card:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 14px 30px rgba(14,26,46,.08)}
+.process-number{font-family:'Playfair Display',serif;font-size:38px;color:var(--gold);margin-bottom:12px;line-height:1}
+.process-card h3{color:var(--navy);margin-bottom:8px;font-family:'Playfair Display',serif;font-size:19px;line-height:1.3}
+.process-card p{color:var(--gold-dark);font-size:17px;font-weight:800}
+.process-card p::before{content:"Only ";font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:1px;display:block}
+
+/* TESTIMONIALS */
+.testimonials{background:white}
+.testimonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.testimonial-card{background:var(--cream);padding:30px;border-radius:18px;border:1px solid #f0ede6;position:relative}
+.testimonial-card::before{content:"“";position:absolute;top:12px;right:22px;font-family:'Playfair Display',serif;font-size:72px;color:var(--gold);opacity:.35;line-height:1}
+.stars{color:var(--gold);letter-spacing:4px;margin-bottom:14px;font-size:14px}
+.testimonial-card blockquote{font-family:'Playfair Display',serif;font-size:17.5px;font-style:italic;color:var(--text);margin-bottom:22px;line-height:1.6}
+.client-name{font-weight:700;color:var(--navy)}
+.client-role{font-size:12px;color:var(--muted)}
+
+/* CTA */
+.cta{background:linear-gradient(rgba(10,18,32,.92),rgba(10,18,32,.92)),url("logo.png") center/cover no-repeat;text-align:center;color:white}
+.cta .section-label{justify-content:center}
+.cta .section-label::after{content:"";width:32px;height:2px;background:var(--gold)}
+.cta .section-title{color:white}
+.cta p{max-width:650px;margin:0 auto 30px;color:#cbd5e1}
+
+/* CONTACT */
+.contact{background:white}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}
+.contact-info h3{font-family:'Playfair Display',serif;font-size:28px;color:var(--navy);margin-bottom:14px}
+.contact-info p{color:var(--muted);margin-bottom:28px}
+.contact-detail{display:flex;gap:14px;margin:18px 0;background:var(--cream);padding:16px;border-radius:14px;border:1px solid #f0ede6}
+.contact-symbol{width:46px;height:46px;display:grid;place-items:center;background:white;color:var(--gold-dark);font-size:20px;flex-shrink:0;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.05)}
+.contact-detail strong{display:block;color:var(--navy);font-size:14px}
+.contact-detail span{color:var(--muted);font-size:14px}
+.contact-form{padding:32px;background:var(--navy);border-radius:20px;box-shadow:0 20px 50px rgba(14,26,46,.20)}
+.contact-form label{color:#e8e2d5!important}
+.contact-form input,.contact-form select,.contact-form textarea{border-radius:10px!important;border:1px solid rgba(255,255,255,.15)!important;background:rgba(255,255,255,.96)!important}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.form-group{margin-bottom:18px}
+.form-group label{display:block;font-size:13px;font-weight:700;color:var(--navy);margin-bottom:8px}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:13px;border:1px solid #d5d9df;background:white;outline:none;color:var(--text);font-size:14px}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--gold)}
+.form-group textarea{min-height:130px;resize:vertical}
+.contact-form button{border:none;width:100%}
+
+/* FOOTER */
+footer{background:#0a1427;color:white;padding:65px 0 20px}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:50px;padding-bottom:45px}
+.footer-about p{color:#a8b2c3;max-width:350px;font-size:14px;margin-top:20px}
+footer h4{font-family:'Playfair Display',serif;font-size:19px;margin-bottom:20px}
+.footer-links{list-style:none}
+.footer-links li{margin:10px 0;color:#a8b2c3;font-size:14px}
+.footer-links a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid #26344b;padding-top:20px;display:flex;justify-content:space-between;color:#a8b2c3;font-size:12px}
+
+/* WHATSAPP */
+.whatsapp{position:fixed;right:24px;bottom:24px;width:58px;height:58px;display:grid;place-items:center;border-radius:50%;background:#25d366;color:white;font-size:27px;z-index:999;box-shadow:0 10px 24px rgba(37,211,102,.35)}
+
+@media(max-width:900px){.services-grid{grid-template-columns:repeat(2,1fr)}.process-grid{grid-template-columns:repeat(2,1fr)}.intro-grid,.why-grid{gap:35px}}
+@media(max-width:700px){
+  section{padding:70px 0}.navbar{min-height:70px}.brand-icon{width:44px;height:44px;font-size:24px}.brand-name{font-size:16px}.menu-toggle{display:block}
+  .nav-links{display:none;position:absolute;top:70px;left:0;right:0;background:white;padding:15px 5% 25px;flex-direction:column;align-items:stretch;gap:0;box-shadow:0 10px 20px rgba(0,0,0,.08)}
+  .nav-links.active{display:flex}.nav-links a{display:block;padding:12px 0}.nav-links .nav-button{text-align:center;margin-top:10px}
+  .hero{min-height:600px}.hero-content{padding:70px 0}.hero h1{font-size:44px}.hero-stats{flex-wrap:wrap;gap:20px}
+  .intro-grid,.why-grid,.contact-grid{grid-template-columns:1fr}.intro-image,.why-image{min-height:300px}.testimonial-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr;gap:30px}.footer-bottom{flex-direction:column;gap:10px}
+}
+@media(max-width:480px){.services-grid,.process-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr;gap:0}.contact-form{padding:22px}.hero .button{display:flex;text-align:center;margin:12px 0}.hero h1{font-size:38px}}
+</style>
+</head>
+<body>
+
+<header>
+<nav class="navbar container">
+  <a href="#home" class="brand" aria-label="Business Compliance by Ubenathi home">
+    <div class="brand-icon">B</div>
+    <div class="brand-name">Business Compliance <span>by Ubenathi</span><small>Professional Service • South Africa</small></div>
+  </a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" type="button">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#process">Pricing</a></li>
+    <li><a href="#contact" class="nav-button">Book Consultation</a></li>
+  </ul>
+</nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge"><i></i> Trusted • Professional • Affordable</div>
+      <h1>Clarity for Today.<br><span>Confidence for Tomorrow.</span></h1>
+      <p>We assist businesses and entrepreneurs with business registrations, compliance, certificates and administrative services, helping you keep your business documentation in order so you can focus on growing your business.</p>
+      <a href="#contact" class="button button-gold">Schedule a Consultation →</a>
+      <a href="#about" class="button button-outline">Discover Our Approach</a>
+      <div class="hero-stats">
+        <div><b>12+</b><span>Services Offered</span></div>
+        <div><b>100%</b><span>Professional</span></div>
+        <div><b>Fast</b><span>Turnaround</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="introduction" id="about">
+  <div class="container intro-grid">
+    <div class="intro-image" role="img" aria-label="Business Compliance by Ubenathi">
+      <div class="intro-card"><div><b>Ubenathi</b><span>Founder & Principal Consultant<br>Miss Ubenathi Lukuzela</span></div></div>
+    </div>
+    <div class="intro-content">
+      <span class="section-label">About Us</span>
+      <h2 class="section-title">Professional Insight Meets Practical Business Solutions</h2>
+      <p>Welcome to professional insight that meets practical business solutions.</p>
+      <p>We offer affordable business compliance and registration services to help entrepreneurs and businesses meet their administrative and regulatory requirements.</p>
+      <p>Our consulting approach is built around understanding your individual circumstances and helping you move forward with confidence.</p>
+      <div class="signature">Your Consultant<small>Founder & Principal Consultant<br><strong style="color:#7c3aed;">Miss Ubenathi Lukuzela</strong></small></div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+    <div class="center-heading"><span class="section-label">Our Expertise</span><h2 class="section-title">Our Services</h2><p class="section-description">Practical business support designed to help you manage your administrative requirements.</p></div>
+    <div class="services-grid">
+      <article class="service-card"><div class="service-icon">$</div><h3>Affordable</h3><p>Professional business compliance services at competitive prices.</p><a href="#contact" class="service-link">Discuss Service →</a></article>
+      <article class="service-card"><div class="service-icon">▤</div><h3>Convenient</h3><p>Let us assist with the administrative processes while you concentrate on running your business.</p><a href="#contact" class="service-link">Discuss Service →</a></article>
+      <article class="service-card"><div class="service-icon">◎</div><h3>Business-Focused</h3><p>Our services are designed for entrepreneurs, small businesses and established businesses that need assistance keeping their documentation up to date.</p><a href="#contact" class="service-link">Discuss Service →</a></article>
+      <article class="service-card"><div class="service-icon">↗</div><h3>Growth Planning</h3><p>Create realistic development plans, define priorities, and establish measurable business objectives.</p><a href="#contact" class="service-link">Discuss Service →</a></article>
+      <article class="service-card"><div class="service-icon">◇</div><h3>Project Consultation</h3><p>Get professional input during project planning, implementation, and evaluation.</p><a href="#contact" class="service-link">Discuss Service →</a></article>
+      <article class="service-card"><div class="service-icon">✦</div><h3>Reliable Support</h3><p>We help you navigate business registration and compliance requirements with a straightforward and professional service.</p><a href="#contact" class="service-link">Discuss Service →</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="why-us">
+  <div class="container why-grid">
+    <div>
+      <span class="section-label">Our Approach</span>
+      <h2 class="section-title">Advice That Connects With Real-World Challenges</h2>
+      <p class="section-description">Every client has different circumstances. Our approach focuses on listening, understanding, and providing guidance that can be applied in practice.</p>
+      <ul class="why-list">
+        <li><span class="why-check">✓</span><span>Personalized consulting and professional attention</span></li>
+        <li><span class="why-check">✓</span><span>Clear communication and defined objectives</span></li>
+        <li><span class="why-check">✓</span><span>Practical recommendations and action plans</span></li>
+        <li><span class="why-check">✓</span><span>Confidential and professional engagement</span></li>
+      </ul>
+      <a href="#contact" class="button button-gold">Start a Conversation →</a>
+    </div>
+    <div class="why-image" role="img" aria-label="Professional business team collaborating"></div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="container">
+    <div class="center-heading"><span class="section-label">Pricing</span><h2 class="section-title">Our Service Fees</h2><p class="section-description">Our services are structured around understanding your needs and assisting with practical next steps.</p></div>
+    <div class="process-grid">
+      <div class="process-card"><div class="process-number">01</div><h3>CIPC Annual Returns</h3><p>R250</p></div>
+      <div class="process-card"><div class="process-number">02</div><h3>B-BBEE Certificates</h3><p>R200</p></div>
+      <div class="process-card"><div class="process-number">03</div><h3>Beneficial Ownership Registration</h3><p>R200</p></div>
+      <div class="process-card"><div class="process-number">04</div><h3>CSD Registration</h3><p>R300</p></div>
+      <div class="process-card"><div class="process-number">05</div><h3>SARS Returns</h3><p>R250</p></div>
+      <div class="process-card"><div class="process-number">06</div><h3>COIDA Registration</h3><p>R350</p></div>
+      <div class="process-card"><div class="process-number">07</div><h3>CIDB Registration</h3><p>R300</p></div>
+      <div class="process-card"><div class="process-number">08</div><h3>BCCCI Registration</h3><p>R350</p></div>
+      <div class="process-card"><div class="process-number">09</div><h3>PSIRA Registration</h3><p>R650</p></div>
+      <div class="process-card"><div class="process-number">10</div><h3>Safety Plan</h3><p>R350</p></div>
+      <div class="process-card"><div class="process-number">11</div><h3>Methodology<br>(Depending on Specification)</h3><p>R300</p></div>
+      <div class="process-card"><div class="process-number">12</div><h3>eThekwini Municipality Supplier Portal Registration</h3><p>R350</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="container">
+    <div class="center-heading"><span class="section-label">Client Experiences</span><h2 class="section-title">Professional Relationships</h2></div>
+    <div class="testimonial-grid">
+      <article class="testimonial-card"><div class="stars">★★★★★</div><blockquote>"The consultation helped us clarify our priorities and develop a structured plan for our business."</blockquote><div class="client-name">Pontsho Mokete</div><div class="client-role">Business Owner</div></article>
+      <article class="testimonial-card"><div class="stars">★★★★★</div><blockquote>"The process was professional, clear, and focused on understanding our specific requirements."</blockquote><div class="client-name">Lonwabo Mvese</div><div class="client-role">Entrepreneur</div></article>
+      <article class="testimonial-card"><div class="stars">★★★★★</div><blockquote>"We appreciated the practical guidance and clear communication throughout our engagement."</blockquote><div class="client-name">Mark Brown</div><div class="client-role">Professional Client</div></article>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container"><span class="section-label">Let's Work Together</span><h2 class="section-title">Your Next Step Starts With a Conversation.</h2><p>Whether you are exploring a new opportunity or working through a business challenge, professional guidance can help you define your next steps.</p><a href="#contact" class="button button-gold">Book Your Consultation →</a></div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="center-heading"><span class="section-label">Get In Touch</span><h2 class="section-title">Let's Discuss Your Requirements</h2><p class="section-description">Complete the enquiry form to start a conversation about your consulting needs.</p></div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Contact the Consultant</h3>
+        <p>We welcome enquiries from individuals, entrepreneurs, small businesses, and organizations.</p>
+        <div class="contact-detail"><div class="contact-symbol">✉</div><div><strong>Email Address</strong><span><a href="mailto:ubenathilukuzela@gmail.com">ubenathilukuzela@gmail.com</a></span></div></div>
+        <div class="contact-detail"><div class="contact-symbol">☎</div><div><strong>Phone / WhatsApp</strong><span><a href="tel:+27835874665">+27 83 587 4665</a></span></div></div>
+        <div class="contact-detail"><div class="contact-symbol">⌖</div><div><strong>Location</strong><span>South Africa</span></div></div>
+        <div class="contact-detail"><div class="contact-symbol">◷</div><div><strong>Open</strong><span>Monday – Friday</span></div></div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group"><label for="name">Full Name *</label><input type="text" id="name" required placeholder="Your name"></div>
+          <div class="form-group"><label for="phone">Phone Number *</label><input type="tel" id="phone" required placeholder="Your contact number"></div>
+        </div>
+        <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" placeholder="you@example.com"></div>
+        <div class="form-group"><label for="service">Consulting Service *</label><select id="service" required><option value="">Select a service</option><option>CIPC Annual Returns</option><option>B-BBEE Certificates</option><option>Beneficial Ownership Registration</option><option>CSD Registration</option><option>SARS Returns</option><option>COIDA Registration</option><option>CIDB Registration</option><option>BCCCI Registration</option><option>PSIRA Registration</option><option>Safety Plan</option><option>Methodology</option><option>Municipality Supplier Portal Registration</option><option>Other Enquiry</option></select></div>
+        <div class="form-group"><label for="message">How Can We Help? *</label><textarea id="message" required placeholder="Tell us briefly about your requirements..."></textarea></div>
+        <button type="submit" class="button button-gold">Send Consultation Enquiry →</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="#home" class="brand"><div class="brand-icon">B</div><div class="brand-name" style="color:white">Business Compliance <span style="color:var(--gold)">by Ubenathi</span><small style="color:#a8b2c3">Professional Service • South Africa</small></div></a>
+        <p>Professional consulting and advisory services focused on clarity, practical solutions, and meaningful business progress.</p>
+      </div>
+      <div><h4>Explore</h4><ul class="footer-links"><li><a href="#home">Home</a></li><li><a href="#about">About the Consultant</a></li><li><a href="#services">Services</a></li><li><a href="#process">Pricing</a></li><li><a href="#contact">Contact</a></li></ul></div>
+      <div><h4>Get In Touch</h4><ul class="footer-links"><li><a href="mailto:ubenathilukuzela@gmail.com">ubenathilukuzela@gmail.com</a></li><li><a href="tel:+27835874665">083 587 4665</a></li><li>South Africa</li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Business Compliance by Ubenathi. All rights reserved.</span><span>Website designed by <a href="https://www.skydreams.co.za">SkyDreams.co.za</a></span></div>
+  </div>
+</footer>
+
+<a href="https://wa.me/27835874665" class="whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contact consultant on WhatsApp">☎</a>
+
+<script>
+const menuToggle=document.getElementById("menuToggle");const navLinks=document.getElementById("navLinks");
+menuToggle.addEventListener("click",function(){const open=navLinks.classList.toggle("active");menuToggle.textContent=open?"✕":"☰";menuToggle.setAttribute("aria-expanded",open);});
+document.querySelectorAll(".nav-links a").forEach(link=>{link.addEventListener("click",function(){navLinks.classList.remove("active");menuToggle.textContent="☰";menuToggle.setAttribute("aria-expanded","false");});});
+document.getElementById("year").textContent=new Date().getFullYear();
+document.getElementById("contactForm").addEventListener("submit",function(event){event.preventDefault();const name=document.getElementById("name").value.trim();const phone=document.getElementById("phone").value.trim();const email=document.getElementById("email").value.trim();const service=document.getElementById("service").value;const message=document.getElementById("message").value.trim();const consultantNumber="27835874665";const enquiry=`CONSULTATION ENQUIRY\n\nName: ${name}\nPhone: ${phone}\nEmail: ${email||"Not provided"}\n\nService Required:\n${service}\n\nMessage:\n${message}`;const whatsappURL="https://wa.me/"+consultantNumber+"?text="+encodeURIComponent(enquiry);window.open(whatsappURL,"_blank","noopener,noreferrer");});
+</script>
+</body>
+</html>
